@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #555; /* Warna teks yang lebih lembut */
+  background-color: #f0f2f5; /* Warna latar belakang yang lembut */
+  padding-top: 70px; /* Menambahkan padding di bagian atas body untuk menghindari konten tertutup header */
+}
+
+header {
+  position: fixed; /* Membuat header tetap di atas */
+  top: 0; /* Menempatkan header di bagian atas halaman */
+  left: 0; /* Menempatkan header di bagian kiri halaman */
+  width: 100%; /* Membuat header memenuhi lebar halaman */
+  background-color: #948f8f; /* Menambahkan warna latar belakang agar teks dapat terbaca */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk estetika */
+  z-index: 1000; /* Memastikan header selalu di atas elemen lain */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Menyelaraskan item di kedua ujung */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  padding: 10px 40px; /* Padding yang lebih besar untuk header */
+}
+
+header h1 {
+  margin: 0; /* Menghilangkan margin default */
+  font-size: 24px; /* Atur ukuran font sesuai kebutuhan */
+}
+
+header nav ul {
+  list-style: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghilangkan padding default */
+  display: flex; /* Menggunakan flexbox untuk menyelaraskan link */
+  gap: 20px; /* Memberikan jarak antar link */
+}
+
+header nav ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah teks */
+  color: #333; /* Warna teks untuk link */
+  font-size: 16px; /* Ukuran font untuk link */
+}
+
+section {
+  padding: 20px;
+  margin: 0 10px;
+  background: white; /* Latar belakang untuk section */
+  border: 1px solid #ddd; /* Border yang lebih lembut */
+}
+
+.about-container {
+  display: flex;
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  justify-content: start; /* Menyelaraskan item secara horizontal */
+  gap: 20px; /* Memberikan jarak antar item */
+}
+
+.profile-pic {
+  width: 150px; /* Atur lebar gambar */
+  height: 150px; /* Atur tinggi gambar */
+  border-radius: 10%; /* Membuat gambar berbentuk lingkaran */
+  margin: 10px 0; /* Memberi jarak atas dan bawah */
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.about-container p {
+  padding: 0 20px; /* Menambahkan padding kiri dan kanan pada teks */
+  text-align: justify; /* Membuat teks rata kiri-kanan */
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  justify-content: start; /* Menyelaraskan item secara horizontal */
+  gap: 20px; /* Memberikan jarak antar item */
+}
+
+.project-pic {
+  max-width: 150px; /* Mengatur lebar maksimal gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.project-container p {
+  padding: 0 20px; /* Menambahkan padding kiri dan kanan pada teks */
+  text-align: justify; /* Membuat teks rata kiri-kanan */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Sesuaikan ini sesuai dengan lebar maksimal yang diinginkan */
+  margin: 0 auto; /* Ini akan memusatkan form */
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #948f8f; /* Warna latar belakang footer yang lebih lembut */
+  color: #333; /* Warna teks pada footer */
+}
+
+footer p {
+  margin: 0;
+}
+
+html {
+  font-size: 24px; /* Meningkatkan ukuran font dasar */
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #555;
+  background-color: #f0f2f5;
+  padding-top: 105px; /* Menyesuaikan padding atas sesuai dengan header yang lebih besar */
+}
+
+header {
+  padding: 0px 10px; /* Menyesuaikan padding header */
+}
+
+.header-container,
+.project-container,
+.about-container,
+.contact-form {
+  gap: 5px; /* Menyesuaikan gap antar elemen */
+}
+
+.header-container nav ul,
+.project-container nav ul,
+.about-container nav ul {
+  gap: 30px; /* Menyesuaikan gap antar link */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px; /* Menyesuaikan padding untuk input dan textarea */
+  margin-bottom: 15px; /* Menyesuaikan margin bawah */
+}
+
+.contact-form button {
+  padding: 15px; /* Menyesuaikan padding tombol */
+}
+
+section {
+  padding: 30px; /* Menyesuaikan padding section */
+  margin: 0 15px; /* Menyesuaikan margin horizontal section */
+}
+
+.project-pic,
+.profile-pic {
+  width: 225px; /* Menyesuaikan lebar gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
